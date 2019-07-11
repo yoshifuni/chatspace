@@ -44,7 +44,7 @@
           margin-left: 0.3rem;
           text-decoration: none;
         
-          .fa.fa-edit{
+          .fa.fa-pencil-square-o{
             display: inline-block;
             font: normal normal normal 14px/1 FontAwesome;
             font-size: inherit;
@@ -76,15 +76,19 @@
       background-color: #2f3e51;
       padding: 20px 20px 0;
       overflow: scroll;
+      color: white;
       .group{
         margin-bottom: 40px;
+        color: white;
         
         &__group-name{
           font-size: 15px;
           margin-bottom: 5px;
+          color: white;
         }
         &__latest-message{
           font-size: 11px;
+          color: white;
         }  
       }
     
