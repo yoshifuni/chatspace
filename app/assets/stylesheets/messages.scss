@@ -165,38 +165,21 @@
             margin-left: 10px;
           }
         }  
-        &__text{
+        &__lower-message{
           color: #434a54;
           font-size: 14px;
           margin-bottom: 10px;
-            
-        }
-      }
-    
-      .message{
-        padding-bottom: 40px;
-        &__upper-info{
-          display: flex;
-          margin-bottom: 10px;
-          &__talker{
-            color: #434a54;
-            font-size: 16px;
-            font-weight: bold;
-          }    
-          &__date{
-            color: #999999;
-            font-size: 12px;
-            margin-left: 10px;
+
+          //   &__content{
+              
+
+          //   }
+          // &__image{
+
+
           }
         }
-        __text{
-          color: #434a54;
-          font-size: 14px;
-          margin-bottom: 10px;
-            
-        }
-
-      }  
+      }
     }
       
     .form{
@@ -205,50 +188,53 @@
       padding: 20px 40px;
       background-color: #ddd;
       
-      .new-message{
+      .new_message{
         display: flex;
+        width: 100%;
 
-        .input-box{
+    
+        .form__mask{
           position: relative;
+          height: 100%;
           width: 100%;
           color: #000;
           background: #FFF;
         
-          &__text{
+          .form__message{
             height: 50px;
             width: 100%;
-            padding: 0 40px 0 10px;
+            // padding: 0 10px 0 10px;
             color: #434a54;
             border-style: none;
             line-height: 50px;
             
           } 
-          .image-label{
+          .form__mask__image{
             font-size: 1.3rem;
             position: absolute;
             top: 10px;
             right: 10px;
             cursor: pointer;
           
-            .fa-image{
+            .icon{
               display: inline-block;
               font: normal normal normal 14px/1 FontAwesome;
               font-size: inherit;
               text-rendering: auto;
               -webkit-font-smoothing: antialiased;
             }
-            &__input{
+            .hidden{
               display: none;
                 
               
             }
           }
-          
         }
-        .input-submit-btn{
+        
+        .form__submit{
           width: 100px;
           height: 50px;
-          padding: 0 30px;
+          // padding: 0 30px;
           margin-left: 15px;
           background-color: #38aef0;
           color: white;
@@ -261,4 +247,3 @@
       }
     }
   } 
-}     
