@@ -1,6 +1,4 @@
 $(function(){
-
-
   function buildPost(post){
     var html = `<div class="message">
                   <div class="message__upper-info">
@@ -20,9 +18,6 @@ $(function(){
     
     return html;
   }
-  
-
-
   $('#new_message').on('submit', function(e){
     e.preventDefault();
     var formData = new FormData(this);
@@ -38,16 +33,12 @@ $(function(){
     .done(function(post){
       var html = buildPost(post);
       $('.messages').append(html);
-      $('#message_content').val('');
       $('.form__submit').prop('disabled', false);
+      $('.new_message')[0].reset();
       $('.messages').animate({ scrollTop: $('.messages')[0].scrollHeight});
-      
-
-
     })
     .fail(function(){
       alert('エラー');
     })
-    
   })
 })
