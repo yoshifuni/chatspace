@@ -2,7 +2,7 @@
 .wrapper
   = render 'shared/chat-side'
   
-  .chat-main
+  .chat-main{data: {id: @group.id}}
     .main-header
       .main-header__left-box
         .main-header__left-box__current-group
