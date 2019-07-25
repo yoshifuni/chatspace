@@ -49,7 +49,7 @@ $(function(){
     console.log(last_message_id)
     var group_id = $('.chat-main').data("id");
     $.ajax({
-      url: '/groups/' + group_id + '/api/messages',
+      url: `/groups/${group_id}/api/messages`,
       type: 'get',
       dataType: 'json',
       data: {last_id: last_message_id},
@@ -63,7 +63,7 @@ $(function(){
       });      
     })
     .fail(function() {
-      console.log('error');
+      alert('エラー');
     });
   };
   setInterval(reloadMessages, 5000);
