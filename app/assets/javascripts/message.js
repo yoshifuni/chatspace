@@ -7,7 +7,7 @@ $(function(){
                       ${post.user_name}
                     </div>
                     <div class="message__upper-info__date">
-                      ${post.date}
+                      ${post.created_at}
                     </div>
                   </div>
                   <div class="message__lower-message">
@@ -46,7 +46,6 @@ $(function(){
   $(function() {
   var reloadMessages = function() {
     var last_message_id = $('.message').last().data("id");
-    console.log(last_message_id)
     var group_id = $('.chat-main').data("id");
     $.ajax({
       url: `/groups/${group_id}/api/messages`,
@@ -69,3 +68,4 @@ $(function(){
   setInterval(reloadMessages, 5000);
   });
 });
+
