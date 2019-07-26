@@ -11,9 +11,11 @@
           member:
           .main-header__left-box__menber-list__member
           aaaa
+
+      = link_to edit_group_path(@group) do
+        .main-header__edit-btn
+          Edit
       
-      = link_to '#' do
-        .main-header__edit-btn Edit
 
     .messages 
       = render @messages
