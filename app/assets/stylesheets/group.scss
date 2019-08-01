@@ -91,10 +91,11 @@
     .chat-group-user__name {
       float: left;
     }
-
+    .chat-group-user__name1 {
+      background-color: #38aef0;
+    }
     .chat-group-user__btn {
       float: right;
-      display: inline-block;
       cursor: pointer;
     
       &.chat-group-user__btn--add {
