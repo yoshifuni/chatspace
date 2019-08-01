@@ -9,8 +9,9 @@
           = @group.name
         .main-header__left-box__menber-list
           member:
-          .main-header__left-box__menber-list__member
-          aaaa
+          - @group.users.each do |user|
+            .main-header__left-box__menber-list__member
+              = user.name
 
       = link_to edit_group_path(@group) do
         .main-header__edit-btn
